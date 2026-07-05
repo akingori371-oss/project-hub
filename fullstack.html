@@ -3,47 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="fullstack.css">
+    <title>Full-stack</title>
+    <link rel="stylesheet" href="css/fullstack.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </head>
 <body>
-    <header>
-        <h1>Full-stack development projects</h1>
+    <header class="w-full bg-white h-30 flex flex-col items-center justify-center border-2 border-dotted">
+        <h1 class="text-3xl font-serif flex flex-row items-center flex flex-col">Full-stack development projects</h1>
+        <div class="flex flex-row gap-4 pt-2">
+        <p class="hover:rotate-25 duration-300">HTML</p>
+        <p class="hover:-rotate-25 duration-300">CSS</p>
+        <p class="hover:-translate-y-2 duration-300">Javascript</p>
+        </div>
     </header>
-     <section>
-        <h2>Level 0ne(beginner)</h2>
-        <li>
-            <ul>2048 clone</ul>
-            <ul>Shopping cart</ul>
-            <ul>Tect adventure game</ul>
-            <ul>To-do list</ul>
-            <ul>Hangman clone</ul>
-        </li>
+    <div class="flex max-md:flex-col ">
+     <section class="w-1/2  bg-white mt-4 p-3 flex flex-col items-center m-2 max-md:flex-col w-full">
+        <h2 class="border-b text-xl w-full flex flex-col items-center  ">Level one(beginner)</h2>
+        <ul class="list-disc font-Homenaje ">
+            <li class="hover:translate-x-2 duration-300">2048 clone</li>
+            <li class="hover:translate-x-2 duration-300">Shopping cart</li>
+            <li class="hover:translate-x-2 duration-300"> Tect adventure game</li>
+            <li class="hover:translate-x-2 duration-300">To-do list</li>
+            <li class="hover:translate-x-2 duration-300">Hangman clone</li>
+        </ul>
      </section>
 
-     <section>
-        <h2>Level two(intermediate)</h2>
-        <li>
-           <ul>Calculator</ul>
-           <ul>Portfolio</ul>
-           <ul>Toast notification library</ul>
-           <ul>Shopping cart</ul>
-           <ul>Wordle clone</ul>
+     <section class="w-full bg-white mt-4 p-3 flex flex-col items-center max-md:flex-col w-full">
+        <h2 class="border-b text-xl w-full flex flex-col items-center">Level two(intermediate)</h2>
+        <ul class="list-disc">
+           <li class="hover:translate-x-2 duration-300">Calculator</li>
+           <li class="hover:translate-x-2 duration-300">Portfolio</li>
+           <li class="hover:translate-x-2 duration-300">Toast notification library</li>
+           <li class="hover:translate-x-2 duration-300"> Shopping cart</li>
+           <li class="hover:translate-x-2 duration-300">Wordle clone</li>
            
            </li>
      </section>
+            </div>
+     <section class="w-1/2  bg-white mt-4 p-3 flex flex-col items-center max-md:flex-col w-full">
+        <h2 class="border-b text-xl w-full flex flex-col items-center">Level three(advanced)</h2>
+        <ul class="list-disc">
+            <li class="hover:translate-x-2 duration-300">Chrome dinosaur page</li>
+            <li class="hover:translate-x-2 duration-300">Card matching game</li>
+            <li class="hover:translate-x-2 duration-300"> Youtube homepage clone </li>
+            <li class="hover:translate-x-2 duration-300">Twitter clone </li>
+            <li class="hover:translate-x-2 duration-300"> Advanced notetaking app</li>
+        </ul>
+     </section>
 
      <section>
-        <h2>Level three(advanced)</h2>
-        <li>
-            <ul>Chrome dinosaur page</ul>
-            <ul>Card matching game</ul>
-            <ul>Youtube homepage clone </ul>
-            <ul>Twitter clone </ul>
-            <ul>Advanced notetaking app</ul>
-        </li>
+        <a href="index.html " class=" text-red-400  text-3xl w-full flex flex-col mt-6 items-center justify-center hover:text-purple-400 duration-300 ">Home</a>
      </section>
 </body>
 </html>
