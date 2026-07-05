@@ -41,3 +41,17 @@ button:hover{
     padding-left: 34px;
     padding-right: 34px;
 }
+#frontend{transition: 0.3s all ease;}
+#frontend:hover{
+color: #780000;
+}
+
+#Backend{transition: 0.3s ease all;}
+#Backend:hover{
+    color: #03045E;
+}
+
+#Fullstack{transition: 0.3s ease all;}
+#Fullstack:hover{
+    color: #003049;
+}
