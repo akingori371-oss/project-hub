@@ -3,45 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="backend.css">
+    <title>Backend</title>
+    <link rel="stylesheet" href="css/backend.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </head>
 <body>
-    <header>
-        <h2>Backend development projects</h2>
+    <header class="w-full bg-[#D9D9D9] h-30 flex flex-col justify-center border-2 border-dotted mb-4 ">
+        <h2 class="flex flex-col items-center text-4xl font-serif">Backend development projects</h2>
 
-    </header>
-    <section>
-      <h2>level one(beginner)</h2>
-     <li>
-        <ul>Basic node.js server</ul>
-        <ul>Basic rest API</ul>
-        <ul>URL shortener</ul>
-        <ul>Paginated API</ul>
-        <ul>Discored bot</ul>
-     </li>
+    </header class="bg-white">
+    <main class="p-3 max-md:flex flex-col">
+        <div class="flex flex-row max-md:flex flex-col w-full">
+    <section class="bg-[#D9D9D9] p-3 w-1/2 mr-4 max-md:w-full " id="div">
+      <h2 class="border-b border-black text-2xl flex flex-col items-center font-serif">Level one(beginner)</h2>
+     <ul class="flex flex-col items-center text-lg font-mono list-disc">
+        <li class="transition-transform duration-300 hover:-translate-x-2" >Basic node.js server</li>
+        <li class="transition-transform duration-300 hover:-translate-x-2">Basic rest API</li>
+        <li class="transition-transform duration-300 hover:-translate-x-2">URL shortener</li>
+        <li class="transition-transform duration-300 hover:-translate-x-2"> Paginated API</li>
+        <li class="transition-transform duration-300 hover:-translate-x-2">Discored bot</li>
+     </ul>
     </section>
     
-    <section>
-        <h2>Level two(intermediate)</h2>
-        <li>
-            <ul>Amazon web scraper</ul>
-            <ul>JSON web token authentication</ul>
-            <ul>User permission role</ul>
-            <ul>Passport Authentication</ul>
-            <ul>Custom Authentication</ul>
-        </li>
+    <section class="bg-[#D9D9D9] p-3 w-1/2 max-md:w-full mt-4">
+        <h2 class="border-b border-black text-2xl flex flex-col items-center font-serif">Level two(intermediate)</h2>
+        <ul class="flex flex-col items-center text-lg font-mono list-disc">
+            <li class="transition-transform duration-300 hover:-translate-x-2">Amazon web scraper</li>
+            <li class="transition-transform duration-300 hover:-translate-x-2"> JSON web token authentication</li>
+            <li class="transition-transform duration-300 hover:-translate-x-2">User permission role</li>
+            <li class="transition-transform duration-300 hover:-translate-x-2">Passport Authentication</li>
+            <li class="transition-transform duration-300 hover:-translate-x-2">Custom Authentication</li>
+            </ul>
     </section>
-
-    <section>
-        <h2>Level three(advanced)</h2>
-        <li>
-            <ul>Markdown blog </ul>
-            <ul>Reddit clone</ul>
-            <ul>Realtime chat App</ul>
-        </li>
+      </div>
+    <section class="bg-[#D9D9D9] p-3 w-full max-md:w-full mt-4">
+        <h2 class="border-b border-black text-2xl flex flex-col items-center font-serif">Level three(advanced)</h2>
+        <ul class="flex flex-col items-center text-lg font-mono list-disc">
+            <li class="transition-transform duration-300 hover:-translate-x-2">Markdown blog </li>
+            <li class="transition-transform duration-300 hover:-translate-x-2">Reddit clone</li>
+            <li class="transition-transform duration-300 hover:-translate-x-2">Realtime chat App</li>
+        </ul>
     </section>
+    </main>
 </body>
 </html>
