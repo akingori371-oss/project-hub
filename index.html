@@ -3,64 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project hub</title>
+    <title>Project Hub</title>
+    <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
     <link rel="stylesheet" href="css/index.css">
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-     
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <header class="w-full h-30 bg-[#D0CD94]  p-4 ">
-        <div class="flex justify-between" id="head">
-        <h1 class="ml-3 text-4xl font-serif text-blue-600">Project hub</h1>
-        <div id="branches" class="ml-3">
-            <nav class="mr-4 gap-3 text-xl text-blue-300" >
-                <a href="frontend.html" class="mt-4 hover:color-[#780000] duration-200" id="frontend">Frontend</a>
-                <a href="backend.html" class="mr-10 ml-10" id="Backend">Backend</a>
-                <a href="fullstack.html " class="mr-5" id="Fullstack">Full-stack</a>
+<body class="bg-[#0f172a] text-[#e2e8f0] min-h-screen antialiased selection:bg-emerald-500 selection:text-slate-900">
+
+    
+    <header class="max-w-7xl mx-auto px-6 pt-10 pb-8 border-b border-slate-800">
+        <div class="flex flex-col sm:flex-row justify-between items-center gap-6" id="head">
+            <h1 class="text-3xl font-extrabold tracking-tight text-white">
+                Project Hub
+            </h1>
+            <nav id="branches" class="flex gap-8 text-base font-medium text-slate-400">
+                <a href="frontend.html" id="frontend" class="hover:text-emerald-400 transition-colors duration-200 ">Frontend</a>
+                <a href="backend.html" id="Backend" class="hover:text-emerald-400 transition-colors duration-200 ">Backend</a>
+                <a href="fullstack.html" id="Fullstack" class="hover:text-emerald-400 transition-colors duration-200 ">Full-stack</a>
             </nav>
-            </div>
         </div>
-        <div class="flex flex-col items-center mt- text-lg text-black font-bold">
-        <p id="par1">Where to always get development projects to improve your coding
-            skills and project ideas as an upcoming developer
-        </p>
-        <p >(Web developer)</p>
+        
+        <div class="mt-8 max-w-2xl">
+            <p id="par1" class="text-xl text-slate-400 leading-relaxed hover:-translate-y-2 duration-200">
+                Where to always get development projects to improve your coding skills and project ideas as an upcoming developer.
+            </p>
+            <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400 mt-2">(Web Developer)</p>
         </div>
     </header>
 
-    <section >
-        <div class="p-4 border-2 m-3 rounded-b-4xl " >
-            <h2 class="mt-2 flex flex-col items-center text-xl text-bold font-serif border-b border-black">Frontend development project</h1>
-                <main class="flex flex-row mt-4">
-         <img src="https://plus.unsplash.com/premium_photo-1720287601920-ee8c503af775?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Frontend" width="300" >
-         <p class="text-xl ml-2">Build responsive,modern and interactive user interface using HTML,CSS,Javascript,react and other frontend technologies
-            .These projects focus on real-world UI design and clean coding practies
-        to strengthen your protfolio </p>
-         </main>
+    
+    <section class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        
+        <div class="bg-[#1e293b] border border-slate-800 rounded-2xl overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-2 hover:border-slate-700 hover:shadow-2xl hover:shadow-emerald-500 ">
+            <h2 class="text-xl font-bold text-white px-6 pt-6 pb-3 border-b border-slate-800/60 group-hover:text-emerald-400 transition-colors">
+                Frontend Development
+            </h2>
+            <main class="flex flex-col ">
+                <img src="https://plus.unsplash.com/premium_photo-1720287601920-ee8c503af775?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                     alt="Frontend" class="w-full h-48 object-cover ">
+                <p class="p-6 text-sm text-slate-400 ">
+                    Build responsive, modern and interactive user interfaces using HTML, CSS, JavaScript, React, and other frontend technologies. These projects focus on real-world UI design and clean coding practices to strengthen your portfolio.
+                </p>
+            </main>
         </div>
 
-        <div class="p-4 border-2 m-3 rounded-l-4xl">
-             <h2 class="flex flex-col items-center font-serif text-xl border-b border-black" >Backend development projects</h2>
-             <main class="flex flex-row-reverse mt-4">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZXXbxYwa9mQguL0IInywaoVxiw9ubvofZVviT1h4ayw&s=10" alt="Backend" width="300">
-            <p class="text-xl">Learn to build powerfull backend systems by creating API's,managing databases,implementing authetication and handling server-side 
-                logic for modern web applications  </p>
-                </main>
+        
+        <div class="bg-[#1e293b] border border-slate-800 rounded-2xl overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-2 hover:border-slate-700 hover:shadow-2xl hover:shadow-emerald-500">
+            <h2 class="text-xl font-bold text-white px-6 pt-6 pb-3 border-b border-slate-800/60 group-hover:text-emerald-400 transition-colors">
+                Backend Development
+            </h2>
+            <main class="flex flex-col">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZXXbxYwa9mQguL0IInywaoVxiw9ubvofZVviT1h4ayw&s=10" 
+                     alt="Backend" class="w-full h-48 object-cover ">
+                <p class="p-6 text-sm text-slate-400 ">
+                    Learn to build powerful backend systems by creating APIs, managing databases, implementing authentication, and handling server-side logic for modern web applications.
+                </p>
+            </main>
         </div>
 
-        <div class="p-4 border-2 m-3 rounded-r-4xl">
-            <h2 class="flex flex-col items-center font-serif font-bold border-b border-black ">Full-stack projects</h2>
-            <main class="flex flex-row items-center" >
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIpcqek3fZ22-haWjkVj4C8diT7lQebDUGT38qBABCIQ&s=10" alt="Full-stack" width="300">
-            <p class="text-xl ml-2">Build complete web applications by combining frontend and backend technologies.
-                Work on real-world projects that involve responsive user interface,server-side logic,databases,API's and authetication to develop end-to-end solutions
-            </p>
+        
+        <div class="bg-[#1e293b]/50 border border-slate-800 rounded-2xl overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-2 hover:border-slate-700 hover:shadow-lg hover:shadow-emerald-500">
+            <h2 class="text-xl font-bold text-white px-6 pt-6 pb-3 border-b border-slate-800/60 group-hover:text-emerald-400 transition-colors">
+                Full-Stack Development
+            </h2>
+            <main class="flex flex-col ">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIpcqek3fZ22-haWjkVj4C8diT7lQebDUGT38qBABCIQ&s=10" 
+                     alt="Full-stack" class="w-full h-48 object-cover ">
+                <p class="p-6 text-sm text-slate-400 ">
+                    Build complete web applications by combining frontend and backend technologies. Work on real-world projects that involve responsive user interfaces, server-side logic, databases, APIs, and authentication to develop end-to-end solutions.
+                </p>
             </main>
         </div>
     </section>
      
-    <section class="flex flex-col items-center m-3" >
-        <button class="bg-indigo-400 px-5 py-1 rounded-lg flex flex-col items-center">Login</button>
+    
+    <section class="max-w-7xl mx-auto px-6 pb-16 flex justify-center">
+        <button class="bg-slate-300 text-slate-950 font-bold px-8 py-3 rounded-xl transition-all duration-200  hover:shadow-lg hover:shadow-emerald-500 cursor-pointer">
+            Login to Dashboard
+        </button>
     </section>
 
 </body>

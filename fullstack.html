@@ -3,57 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full-stack</title>
+    <title>Full-stack Projects - Project Hub</title>
     <link rel="stylesheet" href="css/fullstack.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
 </head>
-<body>
-    <header class="w-full bg-white h-30 flex flex-col items-center justify-center border-2 border-dotted">
-        <h1 class="text-3xl font-serif flex flex-row items-center flex flex-col">Full-stack development projects</h1>
-        <div class="flex flex-row gap-4 pt-2">
-        <p class="hover:rotate-25 duration-300">HTML</p>
-        <p class="hover:-rotate-25 duration-300">CSS</p>
-        <p class="hover:-translate-y-2 duration-300">Javascript</p>
+<body class="bg-[#0f172a] text-[#e2e8f0] min-h-screen antialiased selection:bg-emerald-500 selection:text-slate-900">
+
+    <header class="max-w-7xl mx-auto px-6 pt-10 pb-8 border-b border-slate-800">
+        <div class="flex flex-col sm:flex-row justify-between items-center gap-6">
+            <h1 class="text-3xl font-extrabold tracking-tight text-white bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent">
+                Project Hub
+            </h1>
+            <nav class="flex gap-8 text-base font-medium text-slate-400">
+                <a href="frontend.html" class="hover:text-emerald-400 transition-colors duration-200">Frontend</a>
+                <a href="backend.html" class="hover:text-emerald-400 transition-colors duration-200">Backend</a>
+                <a href="fullstack.html" class="text-emerald-400 relative after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-emerald-400">Full-stack</a>
+            </nav>
+        </div>
+        <div class="mt-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+            <div>
+                <h2 class="text-2xl font-bold text-white mb-2">Full-stack Development Projects</h2>
+                <p class="text-slate-400 max-w-2xl">Connect client frontends with production server architectures and data processing layers.</p>
+            </div>
+            <div class="flex flex-row gap-4 font-mono text-xs font-semibold uppercase tracking-wider text-teal-400 bg-teal-500/5 px-4 py-2 rounded-xl border border-teal-500/10">
+                <span class="hover:rotate-12 duration-300 cursor-default">HTML</span>
+                <span class="text-slate-600">/</span>
+                <span class="hover:-rotate-12 duration-300 cursor-default">CSS</span>
+                <span class="text-slate-600">/</span>
+                <span class="hover:-translate-y-0.5 duration-300 cursor-default">JavaScript</span>
+            </div>
         </div>
     </header>
-    <div class="flex max-md:flex-col ">
-     <section class="w-1/2  bg-white mt-4 p-3 flex flex-col items-center m-2 max-md:flex-col w-full">
-        <h2 class="border-b text-xl w-full flex flex-col items-center  ">Level one(beginner)</h2>
-        <ul class="list-disc font-Homenaje ">
-            <li class="hover:translate-x-2 duration-300">2048 clone</li>
-            <li class="hover:translate-x-2 duration-300">Shopping cart</li>
-            <li class="hover:translate-x-2 duration-300"> Tect adventure game</li>
-            <li class="hover:translate-x-2 duration-300">To-do list</li>
-            <li class="hover:translate-x-2 duration-300">Hangman clone</li>
-        </ul>
-     </section>
 
-     <section class="w-full bg-white mt-4 p-3 flex flex-col items-center max-md:flex-col w-full">
-        <h2 class="border-b text-xl w-full flex flex-col items-center">Level two(intermediate)</h2>
-        <ul class="list-disc">
-           <li class="hover:translate-x-2 duration-300">Calculator</li>
-           <li class="hover:translate-x-2 duration-300">Portfolio</li>
-           <li class="hover:translate-x-2 duration-300">Toast notification library</li>
-           <li class="hover:translate-x-2 duration-300"> Shopping cart</li>
-           <li class="hover:translate-x-2 duration-300">Wordle clone</li>
-           
-           </li>
-     </section>
-            </div>
-     <section class="w-1/2  bg-white mt-4 p-3 flex flex-col items-center max-md:flex-col w-full">
-        <h2 class="border-b text-xl w-full flex flex-col items-center">Level three(advanced)</h2>
-        <ul class="list-disc">
-            <li class="hover:translate-x-2 duration-300">Chrome dinosaur page</li>
-            <li class="hover:translate-x-2 duration-300">Card matching game</li>
-            <li class="hover:translate-x-2 duration-300"> Youtube homepage clone </li>
-            <li class="hover:translate-x-2 duration-300">Twitter clone </li>
-            <li class="hover:translate-x-2 duration-300"> Advanced notetaking app</li>
-        </ul>
-     </section>
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+            <section class="bg-[#1e293b] border border-slate-800 rounded-2xl p-6 hover:border-slate-700 transition-all">
+                <h3 class="text-xl font-bold text-emerald-400 border-b border-slate-800 pb-3 mb-4 flex items-center justify-between">
+                    <span>Level One (Beginner)</span>
+                    <span class="bg-emerald-500/10 text-emerald-400 text-xs px-3 py-1 rounded-full">Easy</span>
+                </h3>
+                <ul class="space-y-3 font-mono text-slate-300">
+                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-emerald-500">2048 Clone</li>
+                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-emerald-500">Shopping Cart</li>
+                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-emerald-500">Text Adventure Game</li>
+                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-emerald-500">To-Do List</li>
+                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-emerald-500">Hangman Clone</li>
+                </ul>
+            </section>
 
-     <section>
-        <a href="index.html " class=" text-red-400  text-3xl w-full flex flex-col mt-6 items-center justify-center hover:text-purple-400 duration-300 ">Home</a>
-     </section>
+            <section class="bg-[#1e293b] border border-slate-800 rounded-2xl p-6 hover:border-slate-700 transition-all">
+                <h3 class="text-xl font-bold text-amber-400 border-b border-slate-800 pb-3 mb-4 flex items-center justify-between">
+                    <span>Level Two (Intermediate)</span>
+                    <span class="bg-amber-500/10 text-amber-400 text-xs px-2.5 py-1 rounded-full">Medium</span>
+                </h3>
+                <ul class="space-y-3 font-mono text-slate-300">
+                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500">Calculator</li>
+                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500">Portfolio Website</li>
+                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500">Toast Notification Library</li>
+                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500">Advanced Shopping Cart</li>
+                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500">Wordle Clone</li>
+                </ul>
+            </section>
+        </div>
+
+        <section class="bg-[#1e293b] border border-slate-800 rounded-2xl p-6 hover:border-slate-700 transition-all">
+            <h3 class="text-xl font-bold text-rose-400 border-b border-slate-800 pb-3 mb-4 flex items-center justify-between">
+                <span>Level Three (Advanced)</span>
+                <span class="bg-rose-500/10 text-rose-400 text-xs px-2.5 py-1 rounded-full">Hard</span>
+            </h3>
+            <ul class="grid grid-cols-1 md:grid-cols-3 gap-4 font-mono text-slate-300">
+                <li class="bg-[#0f172a] p-4 rounded-xl border border-slate-800 transition-transform duration-300 hover:-translate-y-1 hover:border-rose-500">Chrome Dinosaur Page</li>
+                <li class="bg-[#0f172a] p-4 rounded-xl border border-slate-800 transition-transform duration-300 hover:-translate-y-1 hover:border-rose-500">Card Matching Game</li>
+                <li class="bg-[#0f172a] p-4 rounded-xl border border-slate-800 transition-transform duration-300 hover:-translate-y-1 hover:border-rose-500">YouTube Homepage Clone</li>
+                <li class="bg-[#0f172a] p-4 rounded-xl border border-slate-800 transition-transform duration-300 hover:-translate-y-1 hover:border-rose-500">Twitter Clone</li>
+                <li class="bg-[#0f172a] p-4 rounded-xl border border-slate-800 transition-transform duration-300 hover:-translate-y-1 hover:border-rose-500">Advanced Note-Taking App</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="max-w-7xl mx-auto px-6 pb-16 flex justify-center">
+        <a href="index.html" class="inline-flex items-center gap-2 bg-slate-800 border border-slate-700 text-slate-200 px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-200 hover:bg-slate-700 hover:text-white">
+            Back to Home
+        </a>
+    </footer>
+
 </body>
 </html>
