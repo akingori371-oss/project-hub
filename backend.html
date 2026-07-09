@@ -1,81 +1,212 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Backend Projects - Project Hub</title>
-    <link rel="stylesheet" href="css/backend.css">
+    <link rel="stylesheet" href="css/backend.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body class="bg-[#0f172a] text-[#e2e8f0] min-h-screen selection:bg-emerald-500 selection:text-slate-900">
-
+  </head>
+  <body
+    class="bg-[#0f172a] text-[#e2e8f0] min-h-screen selection:bg-emerald-500 selection:text-slate-900"
+  >
     <header class="max-w-7xl mx-auto px-6 pt-10 pb-8 border-b border-slate-800">
-        <div class="flex flex-col sm:flex-row justify-between items-center gap-6">
-            <h1 class="text-3xl font-extrabold  text-white">
-                Project Hub
-            </h1>
-            <nav class="flex gap-8 text-base font-medium text-slate-400">
-                <a href="frontend.html" class="hover:text-emerald-400 transition-colors duration-200">Frontend</a>
-                <a href="backend.html" class="text-emerald-400 ">Backend</a>
-                <a href="fullstack.html" class="hover:text-emerald-400 transition-colors duration-200">Full-stack</a>
-            </nav>
-        </div>
-        <div class="mt-8 max-w-2xl ">
-            <h2 class="text-2xl font-bold text-white mb-2">Backend Development Projects</h2>
-            <p class="text-slate-400 ">Select a difficulty tier to start building scalable server-side architecture, APIs, and databases.</p>
-        </div>
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-6">
+        <h1 class="text-3xl font-extrabold text-white">Project Hub</h1>
+        <nav class="flex gap-8 text-base font-medium text-slate-400">
+          <a
+            href="frontend.html"
+            class="hover:text-emerald-400 transition-colors duration-200"
+            >Frontend</a
+          >
+          <a href="backend.html" class="text-emerald-400">Backend</a>
+          <a
+            href="fullstack.html"
+            class="hover:text-emerald-400 transition-colors duration-200"
+            >Full-stack</a
+          >
+        </nav>
+      </div>
+      <div class="mt-8 max-w-2xl">
+        <h2 class="text-2xl font-bold text-white mb-2">
+          Backend Development Projects
+        </h2>
+        <p class="text-slate-400">
+          Select a difficulty tier to start building scalable server-side
+          architecture, APIs, and databases.
+        </p>
+      </div>
     </header>
 
     <main class="max-w-7xl mx-auto px-6 py-12">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-            <section class="bg-[#1e293b] border border-slate-800 rounded-2xl p-6 hover:border-slate-700 transition-all">
-                <h3 class="text-xl font-bold text-emerald-400  pb-3 mb-4 flex items-center justify-between">
-                    <span>Level One (Beginner)</span>
-                    <span class=" text-emerald-400 text-xs px-3 py-1 ">Easy</span>
-                </h3>
-                <ul class="space-y-1 font-mono text-slate-300">
-                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-emerald-500">Basic Node.js Server</li>
-                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-emerald-500">Basic REST API</li>
-                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-emerald-500">URL Shortener</li>
-                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-emerald-500">Paginated API</li>
-                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-emerald-500">Discord Bot</li>
-                </ul>
-            </section>
-
-            <section class="bg-[#1e293b] border border-slate-800 rounded-2xl p-6 hover:border-slate-700 transition-all">
-                <h3 class="text-xl font-bold text-amber-400 border-b border-slate-800 pb-3 mb-4 flex items-center justify-between">
-                    <span>Level Two (Intermediate)</span>
-                    <span class=" text-amber-400 text-xs px-2.5 py-1 ">Medium</span>
-                </h3>
-                <ul class="space-y-3 font-mono text-slate-300">
-                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500">Amazon Web Scraper</li>
-                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500">JSON Web Token Authentication</li>
-                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500">User Permission Role</li>
-                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500">Passport Authentication</li>
-                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500">Custom Authentication</li>
-                </ul>
-            </section>
-        </div>
-
-        <section class="bg-[#1e293b] border border-slate-800 rounded-2xl p-6 hover:border-slate-700 transition-all">
-            <h3 class="text-xl font-bold text-rose-400 border-b border-slate-800 pb-3 mb-4 flex items-center justify-between">
-                <span>Level Three (Advanced)</span>
-                <span class=" text-rose-400 text-xs px-2.5 py-1 ">Hard</span>
-            </h3>
-            <ul class="grid grid-cols-1 md:grid-cols-3 gap-4 font-mono text-slate-300">
-                <li class="bg-[#0f172a] p-4 rounded-xl border border-slate-800 transition-transform duration-300 hover:-translate-y-1 hover:border-rose-500">Markdown Blog</li>
-                <li class="bg-[#0f172a] p-4 rounded-xl border border-slate-800 transition-transform duration-300 hover:-translate-y-1 hover:border-rose-500">Reddit Clone</li>
-                <li class="bg-[#0f172a] p-4 rounded-xl border border-slate-800 transition-transform duration-300 hover:-translate-y-1 hover:border-rose-500">Realtime Chat App</li>
-            </ul>
+      <div class="grid grid-cols-1 flex items-start lg:grid-cols-2 gap-8 mb-8">
+        <section
+          class="bg-[#1e293b] border border-slate-800 rounded-2xl p-6 hover:border-slate-700 transition-all"
+        >
+          <h3
+            class="text-xl font-bold text-emerald-400 pb-3 mb-4 flex items-center justify-between"
+          >
+            <span>Level One (Beginner)</span>
+            <span class="text-emerald-400 text-xs px-3 py-1">Easy</span>
+          </h3>
+          <ul class="space-y-1 font-mono text-slate-300">
+            <li
+              class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-emerald-500"
+            >
+              Basic Node.js Server
+              <p class="opacity-0 hover:opacity-40 duration-400">
+                A lightweight Node.js server designed to serve content and
+                process client requests efficiently.
+              </p>
+            </li>
+            <li
+              class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-emerald-500"
+            >
+              Basic REST API
+              <p class="opacity-0 hover:opacity-40 duration-400">
+                A simple REST API built with Node.js, demonstrating CRUD
+                operations and efficient data handling.
+              </p>
+            </li>
+            <li
+              class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-emerald-500"
+            >
+              URL Shortener
+              <p class="opacity-0 hover:opacity-40 duration-400">
+                A simple URL shortener that converts long links into short,
+                easy-to-share URLs with fast redirection.
+              </p>
+            </li>
+            <li
+              class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-emerald-500"
+            >
+              Paginated API
+              <p class="opacity-0 hover:opacity-40 duration-400">
+                A RESTful API with pagination support, enabling seamless
+                navigation through large datasets.
+              </p>
+            </li>
+            <li
+              class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-emerald-500"
+            >
+              Discord Bot
+              <p class="opacity-0 hover:opacity-40 duration-400">
+                A feature-rich Discord bot designed to automate tasks, respond
+                to commands, and enhance server interactions.
+              </p>
+            </li>
+          </ul>
         </section>
+
+        <section
+          class="bg-[#1e293b] border border-slate-800 rounded-2xl p-6 hover:border-slate-700 transition-all"
+        >
+          <h3
+            class="text-xl font-bold text-amber-400 border-b border-slate-800 pb-3 mb-4 flex items-center justify-between"
+          >
+            <span>Level Two (Intermediate)</span>
+            <span class="text-amber-400 text-xs px-2.5 py-1">Medium</span>
+          </h3>
+          <ul class="space-y-3 font-mono text-slate-300">
+            <li
+              class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500"
+            >
+              Amazon Web Scraper
+              <p class="opacity-0 hover:opacity-40 duration-400">
+                A web scraper that extracts product information from Amazon,
+                including titles, prices, and ratings for analysis.
+              </p>
+            </li>
+            <li
+              class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500"
+            >
+              JSON Web Token Authentication
+              <p class="opacity-0 hover:opacity-40 duration-400">
+                A secure authentication system using JSON Web Tokens (JWT) to
+                protect routes and manage user sessions.
+              </p>
+            </li>
+            <li
+              class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500"
+            >
+              User Permission Role
+              <p class="opacity-0 hover:opacity-40 duration-400">
+                A role-based access control system that manages user permissions
+                and restricts access based on assigned roles
+              </p>
+            </li>
+            <li
+              class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500"
+            >
+              Passport Authentication
+              <p class="opacity-0 hover:opacity-40 duration-400">
+                A secure authentication system built with Passport.js, featuring
+                user login, session management, and protected routes.
+              </p>
+            </li>
+            <li
+              class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500"
+            >
+              Custom Authentication
+              <p class="opacity-0 hover:opacity-40 duration-400">
+                A custom authentication system built from scratch, featuring
+                secure user registration, login, and access control.
+              </p>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <section
+        class="bg-[#1e293b] border border-slate-800 rounded-2xl p-6 hover:border-slate-700 transition-all"
+      >
+        <h3
+          class="text-xl font-bold text-rose-400 border-b border-slate-800 pb-3 mb-4 flex items-center justify-between"
+        >
+          <span>Level Three (Advanced)</span>
+          <span class="text-rose-400 text-xs px-2.5 py-1">Hard</span>
+        </h3>
+        <ul
+          class="grid grid-cols-1 md:grid-cols-3 gap-4 font-mono text-slate-300"
+        >
+          <li
+            class="bg-[#0f172a] p-4 rounded-xl border border-slate-800 transition-transform duration-300 hover:-translate-y-1 hover:border-rose-500"
+          >
+            Markdown Blog
+            <p class="opacity-0 hover:opacity-40 duration-400">
+              A modern blog application that uses Markdown to create, format,
+              and publish rich, readable content with ease.
+            </p>
+          </li>
+          <li
+            class="bg-[#0f172a] p-4 rounded-xl border border-slate-800 transition-transform duration-300 hover:-translate-y-1 hover:border-rose-500"
+          >
+            Reddit Clone
+            <p class="opacity-0 hover:opacity-40 duration-400">
+              A responsive Reddit clone featuring community discussions, post
+              sharing, voting, and a clean, modern interface.
+            </p>
+          </li>
+          <li
+            class="bg-[#0f172a] p-4 rounded-xl border border-slate-800 transition-transform duration-300 hover:-translate-y-1 hover:border-rose-500"
+          >
+            Realtime Chat App
+            <p class="opacity-0 hover:opacity-40 duration-400">
+              A real-time chat application that enables instant messaging with a
+              fast, responsive, and user-friendly interface.
+            </p>
+          </li>
+        </ul>
+      </section>
     </main>
 
     <footer class="max-w-7xl mx-auto px-6 pb-16 flex justify-center">
-        <a href="index.html" class="inline-flex items-center gap-2 bg-slate-800 border border-slate-700 text-slate-200 px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-200 hover:bg-slate-700 hover:text-white ">
-            
-            Back to Home
-        </a>
+      <a
+        href="index.html"
+        class="inline-flex items-center gap-2 bg-slate-800 border border-slate-700 text-slate-200 px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-200 hover:bg-slate-700 hover:text-white"
+      >
+        Back to Home
+      </a>
     </footer>
-
-</body>
+  </body>
 </html>

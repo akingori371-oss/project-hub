@@ -1,91 +1,248 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend Projects - Project Hub</title>
-    <link rel="stylesheet" href="css/frontend.css">
+    <link rel="stylesheet" href="css/frontend.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body class="bg-[#0f172a] text-[#e2e8f0] min-h-screen antialiased selection:bg-emerald-500 selection:text-slate-900">
-
+  </head>
+  <body
+    class="bg-[#0f172a] text-[#e2e8f0] min-h-screen antialiased selection:bg-emerald-500 selection:text-slate-900"
+  >
     <header class="max-w-7xl mx-auto px-6 pt-10 pb-8 border-b border-slate-800">
-        <div class="flex flex-col sm:flex-row justify-between items-center gap-6">
-            <h1 class="text-3xl font-extrabold tracking-tight text-white bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent">
-                Project Hub
-            </h1>
-            <nav class="flex gap-8 text-base font-medium text-slate-400">
-                <a href="frontend.html" class="text-emerald-400 ">Frontend</a>
-                <a href="backend.html" class="hover:text-emerald-400 transition-colors duration-200">Backend</a>
-                <a href="fullstack.html" class="hover:text-emerald-400 transition-colors duration-200">Full-stack</a>
-            </nav>
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-6">
+        <h1
+          class="text-3xl font-extrabold tracking-tight text-white bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent"
+        >
+          Project Hub
+        </h1>
+        <nav class="flex gap-8 text-base font-medium text-slate-400">
+          <a href="frontend.html" class="text-emerald-400">Frontend</a>
+          <a
+            href="backend.html"
+            class="hover:text-emerald-400 transition-colors duration-200"
+            >Backend</a
+          >
+          <a
+            href="fullstack.html"
+            class="hover:text-emerald-400 transition-colors duration-200"
+            >Full-stack</a
+          >
+        </nav>
+      </div>
+      <div
+        class="mt-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4"
+      >
+        <div>
+          <h2 class="text-2xl font-bold text-white mb-2">
+            Frontend Development Projects
+          </h2>
+          <p class="text-slate-400 max-w-2xl">
+            Build responsive layouts, interactive elements, and modern user
+            interfaces to master client-side development.
+          </p>
         </div>
-        <div class="mt-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-            <div>
-                <h2 class="text-2xl font-bold text-white mb-2">Frontend Development Projects</h2>
-                <p class="text-slate-400 max-w-2xl">Build responsive layouts, interactive elements, and modern user interfaces to master client-side development.</p>
-            </div>
-            <ul class="flex flex-row gap-4 font-mono text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-500/5 px-4 py-2 rounded-xl border border-emerald-500/10">
-                <li class="hover:-translate-y-0.5 duration-200 cursor-default">Learn</li>
-                <li class="text-slate-600">•</li>
-                <li class="hover:-translate-y-0.5 duration-200 cursor-default">Build</li>
-                <li class="text-slate-600">•</li>
-                <li class="hover:-translate-y-0.5 duration-200 cursor-default">Practice</li>
-                <li class="text-slate-600">•</li>
-                <li class="hover:-translate-y-0.5 duration-200 cursor-default">Master</li>
-            </ul>
-        </div>
+        <ul
+          class="flex flex-row gap-4 font-mono text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-500/5 px-4 py-2 rounded-xl border border-emerald-500/10"
+        >
+          <li class="hover:-translate-y-0.5 duration-200 cursor-default">
+            Learn
+          </li>
+          <li class="text-slate-600">•</li>
+          <li class="hover:-translate-y-0.5 duration-200 cursor-default">
+            Build
+          </li>
+          <li class="text-slate-600">•</li>
+          <li class="hover:-translate-y-0.5 duration-200 cursor-default">
+            Practice
+          </li>
+          <li class="text-slate-600">•</li>
+          <li class="hover:-translate-y-0.5 duration-200 cursor-default">
+            Master
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main class="max-w-7xl mx-auto px-6 py-12">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-            <section class="bg-[#1e293b] border border-slate-800 rounded-2xl p-6 hover:border-slate-700 transition-all">
-                <h3 class="text-xl font-bold text-emerald-400 border-b border-slate-800 pb-3 mb-4 flex items-center justify-between">
-                    <span>Level One (Beginner)</span>
-                    <span class="bg-emerald-500/10 text-emerald-400 text-xs px-3 py-1 rounded-full">Easy</span>
-                </h3>
-                <ul class="space-y-3 font-mono text-slate-300">
-                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-emerald-500">Transparent Login Page</li>
-                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-emerald-500">Animated Cards</li>
-                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-emerald-500">Skeleton Loading Page</li>
-                </ul>
-            </section>
-
-            <section class="bg-[#1e293b] border border-slate-800 rounded-2xl p-6 hover:border-slate-700 transition-all">
-                <h3 class="text-xl font-bold text-amber-400 border-b border-slate-800 pb-3 mb-4 flex items-center justify-between">
-                    <span>Level Two (Intermediate)</span>
-                    <span class="bg-amber-500/10 text-amber-400 text-xs px-2.5 py-1 rounded-full">Medium</span>
-                </h3>
-                <ul class="space-y-3 font-mono text-slate-300">
-                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500">Advanced Scrolling Effects</li>
-                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500">3D Scrolling Effect</li>
-                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500">Animated Loading Spinner</li>
-                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500">Animated Hamburger Menu</li>
-                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500">Parallax Scrolling Effect</li>
-                </ul>
-            </section>
-        </div>
-
-        <section class="bg-[#1e293b] border border-slate-800 rounded-2xl p-6 hover:border-slate-700 transition-all">
-            <h3 class="text-xl font-bold text-rose-400 border-b border-slate-800 pb-3 mb-4 flex items-center justify-between">
-                <span>Level Three (Advanced)</span>
-                <span class="bg-rose-500/10 text-rose-400 text-xs px-2.5 py-1 rounded-full">Hard</span>
-            </h3>
-            <ul class="grid grid-cols-1 md:grid-cols-3 gap-4 font-mono text-slate-300">
-                <li class="bg-[#0f172a] p-4 rounded-xl border border-slate-800 transition-transform duration-300 hover:-translate-y-1 hover:border-rose-500">YouTube Clone</li>
-                <li class="bg-[#0f172a] p-4 rounded-xl border border-slate-800 transition-transform duration-300 hover:-translate-y-1 hover:border-rose-500">CSS Battles</li>
-                <li class="bg-[#0f172a] p-4 rounded-xl border border-slate-800 transition-transform duration-300 hover:-translate-y-1 hover:border-rose-500">Vertical Timeline</li>
-                <li class="bg-[#0f172a] p-4 rounded-xl border border-slate-800 transition-transform duration-300 hover:-translate-y-1 hover:border-rose-500">Multistep Form</li>
-                <li class="bg-[#0f172a] p-4 rounded-xl border border-slate-800 transition-transform duration-300 hover:-translate-y-1 hover:border-rose-500">Netflix Video Carousel</li>
-            </ul>
+      <div class="grid grid-cols-1 flex items-start lg:grid-cols-2 gap-8 mb-8">
+        <section
+          class="bg-[#1e293b] border border-slate-800 flex flex-col items-start rounded-2xl p-6 hover:border-slate-700 transition-all"
+        >
+          <h3
+            class="text-xl font-bold text-emerald-400 border-b border-slate-800 pb-3 mb-4 flex items-center justify-between"
+          >
+            <span>Level One (Beginner)</span>
+            <span
+              class="bg-emerald-500/10 text-emerald-400 text-xs px-3 py-1 rounded-full"
+              >Easy</span
+            >
+          </h3>
+          <ul class="space-y-3 font-mono text-slate-300">
+            <li
+              class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-emerald-500"
+            >
+              Transparent Login Page
+              <p class="opacity-0 hover:opacity-40 duration-400">
+                A sleek, transparent login page with a modern glassmorphism
+                design, offering a clean and elegant user experience.
+              </p>
+            </li>
+            <li
+              class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-emerald-500"
+            >
+              Animated Cards
+              <p class="opacity-0 hover:opacity-40 duration-400">
+                An interactive animated card featuring smooth hover effects,
+                transitions, and a modern responsive design.
+              </p>
+            </li>
+            <li
+              class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-emerald-500"
+            >
+              Skeleton Loading Page
+              <p class="opacity-0 hover:opacity-40 duration-400">
+                A modern skeleton loading page that displays animated
+                placeholders while content loads, improving the user experience.
+              </p>
+            </li>
+          </ul>
         </section>
+
+        <section
+          class="bg-[#1e293b] border border-slate-800 rounded-2xl p-6 hover:border-slate-700 transition-all"
+        >
+          <h3
+            class="text-xl font-bold text-amber-400 border-b border-slate-800 pb-3 mb-4 flex items-center justify-between"
+          >
+            <span>Level Two (Intermediate)</span>
+            <span
+              class="bg-amber-500/10 text-amber-400 text-xs px-2.5 py-1 rounded-full"
+              >Medium</span
+            >
+          </h3>
+          <ul class="space-y-3 font-mono text-slate-300">
+            <li
+              class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500"
+            >
+              Advanced Scrolling Effects
+              <p class="opacity-0 hover:opacity-40 duration-400">
+                A modern webpage featuring smooth scrolling animations and
+                dynamic effects that enhance user engagement.
+              </p>
+            </li>
+            <li
+              class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500"
+            >
+              3D Scrolling Effect
+              <p class="opacity-0 hover:opacity-40 duration-400">
+                A visually immersive webpage featuring 3D scrolling animations
+                that create depth and dynamic movement.
+              </p>
+            </li>
+            <li
+              class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500"
+            >
+              Animated Loading Spinner
+              <p class="opacity-0 hover:opacity-40 duration-400">
+                A sleek animated loading spinner designed with smooth
+                transitions to provide visual feedback during loading.
+              </p>
+            </li>
+            <li
+              class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500"
+            >
+              Animated Hamburger Menu
+              <p class="opacity-0 hover:opacity-40 duration-400">
+                A modern animated hamburger menu with smooth transitions that
+                transforms into a close icon for intuitive navigation.
+              </p>
+            </li>
+            <li
+              class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500"
+            >
+              Parallax Scrolling Effect
+              <p class="opacity-0 hover:opacity-40 duration-400">
+                A visually engaging webpage featuring parallax scrolling that
+                creates depth and smooth motion as users scroll.
+              </p>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <section
+        class="bg-[#1e293b] border border-slate-800 rounded-2xl p-6 hover:border-slate-700 transition-all"
+      >
+        <h3
+          class="text-xl font-bold text-rose-400 border-b border-slate-800 pb-3 mb-4 flex items-center justify-between"
+        >
+          <span>Level Three (Advanced)</span>
+          <span
+            class="bg-rose-500/10 text-rose-400 text-xs px-2.5 py-1 rounded-full"
+            >Hard</span
+          >
+        </h3>
+        <ul
+          class="grid grid-cols-1 md:grid-cols-3 gap-4 font-mono text-slate-300"
+        >
+          <li
+            class="bg-[#0f172a] p-4 rounded-xl border border-slate-800 transition-transform duration-300 hover:-translate-y-1 hover:border-rose-500"
+          >
+            YouTube Clone
+            <p class="opacity-0 hover:opacity-40 duration-400">
+              A responsive YouTube clone featuring a modern video browsing
+              interface inspired by the original platform.
+            </p>
+          </li>
+          <li
+            class="bg-[#0f172a] p-4 rounded-xl border border-slate-800 transition-transform duration-300 hover:-translate-y-1 hover:border-rose-500"
+          >
+            CSS Battles
+            <p class="opacity-0 hover:opacity-40 duration-400">
+              A collection of creative CSS Battle recreations that demonstrate
+              precision, layout skills, and advanced styling techniques.
+            </p>
+          </li>
+          <li
+            class="bg-[#0f172a] p-4 rounded-xl border border-slate-800 transition-transform duration-300 hover:-translate-y-1 hover:border-rose-500"
+          >
+            Vertical Timeline
+            <p class="opacity-0 hover:opacity-40 duration-400">
+              A clean and responsive vertical timeline that presents events in
+              chronological order with a modern design.
+            </p>
+          </li>
+          <li
+            class="bg-[#0f172a] p-4 rounded-xl border border-slate-800 transition-transform duration-300 hover:-translate-y-1 hover:border-rose-500"
+          >
+            Multistep Form
+            <p class="opacity-0 hover:opacity-40 duration-400">
+              A responsive multistep form that guides users through each stage
+              with a clean and intuitive interface.
+            </p>
+          </li>
+          <li
+            class="bg-[#0f172a] p-4 rounded-xl border border-slate-800 transition-transform duration-300 hover:-translate-y-1 hover:border-rose-500"
+          >
+            Netflix Video Carousel
+            <p class="opacity-0 hover:opacity-40 duration-400">
+              A modern Netflix-style carousel showcasing movie and TV thumbnails
+              with seamless horizontal scrolling.
+            </p>
+          </li>
+        </ul>
+      </section>
     </main>
 
     <footer class="max-w-7xl mx-auto px-6 pb-16 flex justify-center">
-        <a href="index.html" class="inline-flex items-center gap-2 bg-slate-800 border border-slate-700 text-slate-200 px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-200 hover:bg-slate-700 hover:text-white">
-            Back to Home
-        </a>
+      <a
+        href="index.html"
+        class="inline-flex items-center gap-2 bg-slate-800 border border-slate-700 text-slate-200 px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-200 hover:bg-slate-700 hover:text-white"
+      >
+        Back to Home
+      </a>
     </footer>
-
-</body>
+  </body>
 </html>

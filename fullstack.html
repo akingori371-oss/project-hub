@@ -1,91 +1,262 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Full-stack Projects - Project Hub</title>
-    <link rel="stylesheet" href="css/fullstack.css">
+    <link rel="stylesheet" href="css/fullstack.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body class="bg-[#0f172a] text-[#e2e8f0] min-h-screen antialiased selection:bg-emerald-500 selection:text-slate-900">
-
+  </head>
+  <body
+    class="bg-[#0f172a] text-[#e2e8f0] min-h-screen antialiased selection:bg-emerald-500 selection:text-slate-900"
+  >
     <header class="max-w-7xl mx-auto px-6 pt-10 pb-8 border-b border-slate-800">
-        <div class="flex flex-col sm:flex-row justify-between items-center gap-6">
-            <h1 class="text-3xl font-extrabold tracking-tight text-white bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent">
-                Project Hub
-            </h1>
-            <nav class="flex gap-8 text-base font-medium text-slate-400">
-                <a href="frontend.html" class="hover:text-emerald-400 transition-colors duration-200">Frontend</a>
-                <a href="backend.html" class="hover:text-emerald-400 transition-colors duration-200">Backend</a>
-                <a href="fullstack.html" class="hover:text-emerald-400 transition-colors duration-200">Full-stack</a>
-            </nav>
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-6">
+        <h1
+          class="text-3xl font-extrabold tracking-tight text-white bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent"
+        >
+          Project Hub
+        </h1>
+        <nav class="flex gap-8 text-base font-medium text-slate-400">
+          <a
+            href="frontend.html"
+            class="hover:text-emerald-400 transition-colors duration-200"
+            >Frontend</a
+          >
+          <a
+            href="backend.html"
+            class="hover:text-emerald-400 transition-colors duration-200"
+            >Backend</a
+          >
+          <a
+            href="fullstack.html"
+            class="hover:text-emerald-400 transition-colors duration-200"
+            >Full-stack</a
+          >
+        </nav>
+      </div>
+      <div
+        class="mt-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4"
+      >
+        <div>
+          <h2 class="text-2xl font-bold text-white mb-2">
+            Full-stack Development Projects
+          </h2>
+          <p class="text-slate-400 max-w-2xl">
+            Connect client frontends with production server architectures and
+            data processing layers.
+          </p>
         </div>
-        <div class="mt-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-            <div>
-                <h2 class="text-2xl font-bold text-white mb-2">Full-stack Development Projects</h2>
-                <p class="text-slate-400 max-w-2xl">Connect client frontends with production server architectures and data processing layers.</p>
-            </div>
-            <div class="flex flex-row gap-4 font-mono text-xs font-semibold uppercase tracking-wider text-teal-400 bg-teal-500/5 px-4 py-2 rounded-xl border border-teal-500/10">
-                <span class="hover:rotate-12 duration-300 cursor-default">HTML</span>
-                <span class="text-slate-600">/</span>
-                <span class="hover:-rotate-12 duration-300 cursor-default">CSS</span>
-                <span class="text-slate-600">/</span>
-                <span class="hover:-translate-y-0.5 duration-300 cursor-default">JavaScript</span>
-            </div>
+        <div
+          class="flex flex-row gap-4 font-mono text-xs font-semibold uppercase tracking-wider text-teal-400 bg-teal-500/5 px-4 py-2 rounded-xl border border-teal-500/10"
+        >
+          <span class="hover:rotate-12 duration-300 cursor-default">HTML</span>
+          <span class="text-slate-600">/</span>
+          <span class="hover:-rotate-12 duration-300 cursor-default">CSS</span>
+          <span class="text-slate-600">/</span>
+          <span class="hover:-translate-y-0.5 duration-300 cursor-default"
+            >JavaScript</span
+          >
         </div>
+      </div>
     </header>
 
     <main class="max-w-7xl mx-auto px-6 py-12">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-            <section class="bg-[#1e293b] border border-slate-800 rounded-2xl p-6 hover:border-slate-700 transition-all">
-                <h3 class="text-xl font-bold text-emerald-400 border-b border-slate-800 pb-3 mb-4 flex items-center justify-between">
-                    <span>Level One (Beginner)</span>
-                    <span class="bg-emerald-500/10 text-emerald-400 text-xs px-3 py-1 rounded-full">Easy</span>
-                </h3>
-                <ul class="space-y-3 font-mono text-slate-300">
-                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-emerald-500">2048 Clone</li>
-                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-emerald-500">Shopping Cart</li>
-                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-emerald-500">Text Adventure Game</li>
-                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-emerald-500">To-Do List</li>
-                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-emerald-500">Hangman Clone</li>
-                </ul>
-            </section>
-
-            <section class="bg-[#1e293b] border border-slate-800 rounded-2xl p-6 hover:border-slate-700 transition-all">
-                <h3 class="text-xl font-bold text-amber-400 border-b border-slate-800 pb-3 mb-4 flex items-center justify-between">
-                    <span>Level Two (Intermediate)</span>
-                    <span class="bg-amber-500/10 text-amber-400 text-xs px-2.5 py-1 rounded-full">Medium</span>
-                </h3>
-                <ul class="space-y-3 font-mono text-slate-300">
-                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500">Calculator</li>
-                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500">Portfolio Website</li>
-                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500">Toast Notification Library</li>
-                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500">Advanced Shopping Cart</li>
-                    <li class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500">Wordle Clone</li>
-                </ul>
-            </section>
-        </div>
-
-        <section class="bg-[#1e293b] border border-slate-800 rounded-2xl p-6 hover:border-slate-700 transition-all">
-            <h3 class="text-xl font-bold text-rose-400 border-b border-slate-800 pb-3 mb-4 flex items-center justify-between">
-                <span>Level Three (Advanced)</span>
-                <span class="bg-rose-500/10 text-rose-400 text-xs px-2.5 py-1 rounded-full">Hard</span>
-            </h3>
-            <ul class="grid grid-cols-1 md:grid-cols-3 gap-4 font-mono text-slate-300">
-                <li class="bg-[#0f172a] p-4 rounded-xl border border-slate-800 transition-transform duration-300 hover:-translate-y-1 hover:border-rose-500">Chrome Dinosaur Page</li>
-                <li class="bg-[#0f172a] p-4 rounded-xl border border-slate-800 transition-transform duration-300 hover:-translate-y-1 hover:border-rose-500">Card Matching Game</li>
-                <li class="bg-[#0f172a] p-4 rounded-xl border border-slate-800 transition-transform duration-300 hover:-translate-y-1 hover:border-rose-500">YouTube Homepage Clone</li>
-                <li class="bg-[#0f172a] p-4 rounded-xl border border-slate-800 transition-transform duration-300 hover:-translate-y-1 hover:border-rose-500">Twitter Clone</li>
-                <li class="bg-[#0f172a] p-4 rounded-xl border border-slate-800 transition-transform duration-300 hover:-translate-y-1 hover:border-rose-500">Advanced Note-Taking App</li>
-            </ul>
+      <div class="grid grid-cols-1 flex items-start lg:grid-cols-2 gap-8 mb-8">
+        <section
+          class="bg-[#1e293b] border border-slate-800 rounded-2xl p-6 hover:border-slate-700 transition-all"
+        >
+          <h3
+            class="text-xl font-bold text-emerald-400 border-b border-slate-800 pb-3 mb-4 flex items-center justify-between"
+          >
+            <span>Level One (Beginner)</span>
+            <span
+              class="bg-emerald-500/10 text-emerald-400 text-xs px-3 py-1 rounded-full"
+              >Easy</span
+            >
+          </h3>
+          <ul class="space-y-3 font-mono text-slate-300">
+            <li
+              class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-emerald-500"
+            >
+              2048 Clone
+              <p class="opacity-0 hover:opacity-40 duration-400">
+                A responsive 2048 game clone featuring smooth tile animations,
+                score tracking, and intuitive gameplay.
+              </p>
+            </li>
+            <li
+              class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-emerald-500"
+            >
+              Shopping Cart
+              <p class="opacity-0 hover:opacity-40 duration-400">
+                A responsive shopping cart application that allows users to add,
+                update, and remove items with real-time price calculations.
+              </p>
+            </li>
+            <li
+              class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-emerald-500"
+            >
+              Text Adventure Game
+              <p class="opacity-0 hover:opacity-40 duration-400">
+                A choice-driven text adventure featuring branching storylines,
+                engaging narratives, and multiple endings.
+              </p>
+            </li>
+            <li
+              class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-emerald-500"
+            >
+              To-Do List
+              <p class="opacity-0 hover:opacity-40 duration-400">
+                A responsive to-do list application that helps users organize,
+                manage, and track daily tasks efficiently.
+              </p>
+            </li>
+            <li
+              class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-emerald-500"
+            >
+              Hangman Clone
+              <p class="opacity-0 hover:opacity-40 duration-400">
+                A modern Hangman game featuring interactive word guessing, score
+                tracking, and smooth gameplay.
+              </p>
+            </li>
+          </ul>
         </section>
+
+        <section
+          class="bg-[#1e293b] border border-slate-800 rounded-2xl p-6 hover:border-slate-700 transition-all"
+        >
+          <h3
+            class="text-xl font-bold text-amber-400 border-b border-slate-800 pb-3 mb-4 flex items-center justify-between"
+          >
+            <span>Level Two (Intermediate)</span>
+            <span
+              class="bg-amber-500/10 text-amber-400 text-xs px-2.5 py-1 rounded-full"
+              >Medium</span
+            >
+          </h3>
+          <ul class="space-y-3 font-mono text-slate-300">
+            <li
+              class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500"
+            >
+              Calculator
+              <p class="opacity-0 hover:opacity-40 duration-400">
+                A responsive calculator application that performs basic
+                arithmetic operations with a clean and intuitive interface.
+              </p>
+            </li>
+            <li
+              class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500"
+            >
+              Portfolio Website
+              <p class="opacity-0 hover:opacity-40 duration-400">
+                A responsive portfolio website designed to highlight creative
+                work, technical expertise, and professional achievements.
+              </p>
+            </li>
+            <li
+              class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500"
+            >
+              Toast Notification Library
+              <p class="opacity-0 hover:opacity-40 duration-400">
+                A lightweight toast notification library that displays elegant,
+                customizable alerts with smooth animations.
+              </p>
+            </li>
+            <li
+              class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500"
+            >
+              Advanced Shopping Cart
+              <p class="opacity-0 hover:opacity-0 duration-400">
+                An advanced shopping list application featuring item management,
+                categories, search, and real-time organization.
+              </p>
+            </li>
+            <li
+              class="bg-[#0f172a] p-3 rounded-xl border border-slate-800 transition-transform duration-300 hover:translate-x-2 hover:border-amber-500"
+            >
+              Wordle Clone
+              <p class="opacity-0 hover:opacity-40 duration-400">
+                A responsive Wordle clone that challenges players to guess the
+                hidden word with interactive feedback and smooth gameplay.
+              </p>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <section
+        class="bg-[#1e293b] border border-slate-800 rounded-2xl p-6 hover:border-slate-700 transition-all"
+      >
+        <h3
+          class="text-xl font-bold text-rose-400 border-b border-slate-800 pb-3 mb-4 flex items-center justify-between"
+        >
+          <span>Level Three (Advanced)</span>
+          <span
+            class="bg-rose-500/10 text-rose-400 text-xs px-2.5 py-1 rounded-full"
+            >Hard</span
+          >
+        </h3>
+        <ul
+          class="grid grid-cols-1 md:grid-cols-3 gap-4 font-mono text-slate-300"
+        >
+          <li
+            class="bg-[#0f172a] p-4 rounded-xl border border-slate-800 transition-transform duration-300 hover:-translate-y-1 hover:border-rose-500"
+          >
+            Chrome Dinosaur Page
+            <p class="opacity-0 hover:opacity-40 duration-400">
+              A browser-based Chrome Dinosaur Game clone featuring smooth
+              gameplay, obstacle avoidance, and responsive controls.
+            </p>
+          </li>
+          <li
+            class="bg-[#0f172a] p-4 rounded-xl border border-slate-800 transition-transform duration-300 hover:-translate-y-1 hover:border-rose-500"
+          >
+            Card Matching Game
+            <p class="opacity-0 hover:opacity-40 duration-400">
+              A responsive card matching game that challenges players to find
+              matching pairs through memory and strategy.
+            </p>
+          </li>
+          <li
+            class="bg-[#0f172a] p-4 rounded-xl border border-slate-800 transition-transform duration-300 hover:-translate-y-1 hover:border-rose-500"
+          >
+            YouTube Homepage Clone
+            <p class="opacity-0 hover:opacity-40 duration-400">
+              A responsive YouTube homepage clone that recreates the platform's
+              modern layout, navigation, and video grid.
+            </p>
+          </li>
+          <li
+            class="bg-[#0f172a] p-4 rounded-xl border border-slate-800 transition-transform duration-300 hover:-translate-y-1 hover:border-rose-500"
+          >
+            Twitter Clone
+            <p class="opacity-0 hover:opacity-40 duration-400">
+              A responsive Twitter clone featuring post creation, user
+              interactions, and a modern social media interface.
+            </p>
+          </li>
+          <li
+            class="bg-[#0f172a] p-4 rounded-xl border border-slate-800 transition-transform duration-300 hover:-translate-y-1 hover:border-rose-500"
+          >
+            Advanced Note-Taking App
+            <p class="opacity-0 hover:opacity-40 duration-400">
+              An advanced note-taking application featuring rich text editing,
+              organization tools, and seamless note management.
+            </p>
+          </li>
+        </ul>
+      </section>
     </main>
 
     <footer class="max-w-7xl mx-auto px-6 pb-16 flex justify-center">
-        <a href="index.html" class="flex items-center gap-2 bg-slate-800 border border-slate-700 text-slate-200 px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-200 hover:bg-slate-700 hover:text-white">
-            Back to Home
-        </a>
+      <a
+        href="index.html"
+        class="flex items-center gap-2 bg-slate-800 border border-slate-700 text-slate-200 px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-200 hover:bg-slate-700 hover:text-white"
+      >
+        Back to Home
+      </a>
     </footer>
-
-</body>
+  </body>
 </html>
