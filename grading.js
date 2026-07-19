@@ -36,3 +36,30 @@ let hasMEAN = checkMEAN(MEAN);
 let hasDjango = checkDjango(Django);
 let hasNextjs = checkNextjs(Nextjs);
 
+let finalscore = [];
+
+button.addEventListener(`click`, () => {
+  let totalScore = 0;
+  let hasHeading = /<h[1-6]>/.test(html);
+  checkHTML(html)
+  function checkHTML(html) {
+    if(html.includes('<html>')  && hasHeading && html.includes('<p>') && (html.includes(`<div>`) && html.includes(`id`) || html.includes(`class`))) {
+         totalScore += 3
+      
+   }
+      if (html.includes("href") || (html.includes("target") && html.includes("<button>")) || html.includes(`<input`)){
+         totalScore += 2;
+       
+      }
+     if((html.includes(`<img`) && html.includes(`<ul>`) || html.includes(`<ul>`)) && (html.includes(`<span>`) || html.includes(`<form>`) || html.includes(`<textarea>`) || html.includes(`<label>`))){
+        totalScore += 3
+        
+    }  
+     if(html.includes(`<header>`) || html.includes(`<nav>`) || html.includes(`<main>`) && html.includes(`section`) || html.includes(`article`) || html.includes(`<aside>`) || html.includes(`<footer>`)) {
+        totalScore += 2;
+    
+    };
+    
+    finalscore.push(totalScore);
+}})
+
