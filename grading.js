@@ -37,9 +37,10 @@ let hasDjango = checkDjango(Django);
 let hasNextjs = checkNextjs(Nextjs);
 
 let finalscore = [];
+let totalScore = 0;
 
 button.addEventListener(`click`, () => {
-  let totalScore = 0;
+  
   let hasHeading = /<h[1-6]>/.test(html);
   checkHTML(html)
   function checkHTML(html) {
@@ -60,6 +61,26 @@ button.addEventListener(`click`, () => {
     
     };
     
-    finalscore.push(totalScore);
-}})
+   
+    
+}
+
+function checkCSS(CSS){
+   if(CSS.includes('color') && CSS.includes('width') && CSS.includes('margin') && CSS.includes('padding') && CSS.includes('border'))
+   {totalScore += 3}
+   if(CSS.includes('display') || CSS.includes('position') && CSS.includes('overflow')){
+   totalScore += 2
+}   if(CSS.includes('flex-direction') && CSS.includes('justify-content') && CSS.includes('align-items') || CSS.includes('gap') && CSS.includes('flex') || CSS.includes('grid')){
+   totalScore += 3
+}   if(CSS.includes('font-size') || CSS.includes('font-weight') || CSS.includes('font-family') || CSS.includes('line-height') || CSS.includes('text-align') ){
+   totalScore += 2
+}   if(CSS.includes('background-color') && CSS.includes('border-radius') && CSS.includes('box-shadow') && CSS.includes('opacity'));
+   {totalScore += 3}
+    if(CSS.includes('max-width') && CSS.includes('min-width') && CSS.includes('margin'));
+   {totalScore += 3}
+}
+
+
+}
+)
 
