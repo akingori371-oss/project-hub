@@ -62,10 +62,14 @@ function checkJavascript(Javascript) {
 
 button.addEventListener('click', () => {
   totalScore = 0; 
+  
+  const html = document.getElementById('html').value;
+const CSS = document.getElementById('CSS').value;
+const Javascript = document.getElementById('Javascript').value;
 
   checkHTML(html);
   checkCSS(CSS);
   checkJavascript(Javascript);
 
-  result.innerHTML = `Your total score is ${totalScore} out of 19`;
+  result.textContent = `Your total score is ${totalScore} out of 19`;
 });
